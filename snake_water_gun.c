@@ -54,18 +54,18 @@ int main()
     srand(time(0));
     num = rand() % 100 + 1;
     //printf("the num is %d\n" ,num);
-        if (num < 33)
-        {
-            comp = 's';
-        }
-        else if (num > 33 && num < 66)
-        {
-            comp = 'w';
-        }
-        else
-        {
-            comp = 'g';
-        }
+    if (num < 33)
+    {
+        comp = 's';
+    }
+    else if (num > 33 && num < 66)
+    {
+        comp = 'w';
+    }
+    else
+    {
+        comp = 'g';
+    }
         printf("Enter 's' for snake, 'w' for water and 'g' for gun\n");
         scanf("%c", &you);
         result = snakewatergun(you, comp);
